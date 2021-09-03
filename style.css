@@ -1,0 +1,573 @@
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Bk';
+    src: local('ITC Avant Garde Gothic Bk'), local('ITC-Avant-Garde-Gothic-Bk'),
+        url('ITCAvantGardeStd-Bk.woff2') format('woff2'),
+        url('ITCAvantGardeStd-Bk.woff') format('woff'),
+        url('ITCAvantGardeStd-Bk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic XLt';
+    src: local('ITC Avant Garde Gothic Light'), local('ITC-Avant-Garde-Gothic-Light'),
+        url('ITCAvantGardeStd-XLt.woff2') format('woff2'),
+        url('ITCAvantGardeStd-XLt.woff') format('woff'),
+        url('ITCAvantGardeStd-XLt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Md';
+    src: local('ITC Avant Garde Gothic Md'), local('ITC-Avant-Garde-Gothic-Md'),
+        url('ITCAvantGardeStd-Md.woff2') format('woff2'),
+        url('ITCAvantGardeStd-Md.woff') format('woff'),
+        url('ITCAvantGardeStd-Md.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Bold';
+    src: local('ITC Avant Garde Gothic Bold'), local('ITC-Avant-Garde-Gothic-Bold'),
+        url('ITCAvantGardeStd-Bold.woff2') format('woff2'),
+        url('ITCAvantGardeStd-Bold.woff') format('woff'),
+        url('ITCAvantGardeStd-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+
+
+body {
+    background-color: #bbd1d8;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+}
+
+/* 导航页面格式 */
+
+.nav {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    background-color: #bbd1d8;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    align-items: baseline;
+}
+
+
+.right-side {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-left: 1.5vw;
+    font-size: 20px;
+}
+
+.name {
+    font-size: 32px;
+    font-family: 'ITC Avant Garde Gothic Bold', serif;
+
+}
+
+.name a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.5s;
+}
+
+.name a span {
+    color: rgb(255, 123, 0);
+    transition: 0.5s;
+
+
+}
+
+.name a:hover {
+    color: rgb(255, 123, 0);
+}
+
+.name a:hover span {
+    color: black;
+}
+
+.nav-link-wrapper {
+    height: 28px;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+}
+
+.nav-link-wrapper-down {
+    height: 28px;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+    position: relative;
+
+}
+
+.nav-link-wrapper-down a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+}
+
+.nav-link-icons img {
+    height: 22px;
+    width: 100%;
+
+}
+
+.nav-link-icons-1 img {
+    height: 18px;
+    width: 100%;
+
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 2px solid rgb(255, 123, 0);
+}
+
+.nav-link-wrapper a:hover {
+    color: rgb(255, 123, 0);
+}
+
+.nav-link-wrapper-down:hover {
+    border-bottom: 2px solid rgb(255, 123, 0);
+}
+
+.nav-link-wrapper-down a:hover {
+    color: rgb(255, 123, 0);
+}
+
+.nav-link-wrapper-down:hover .dropdown-content {
+    display:block;
+    margin-top: 5px;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+
+}
+
+
+
+
+
+.nav {
+    position: relative;
+}
+
+/* 个人介绍大图排版 */
+
+.main-pic-text {
+    background-color: white;
+    position: absolute;
+    top: 6vw;
+    left: 4vw;
+    right: 4vw;
+    min-height: 66vh;
+
+
+    background: url('DSC03717-6网页.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    opacity: 0.8;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.content-text {
+
+    padding-left: vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    word-wrap: break-word;
+    text-align:left;
+    letter-spacing: 2px;
+    line-height: 115px;
+    
+}
+
+.content-text h1 {
+    font-size: 95px;
+    color:rgb(0, 0, 0);
+    font-family: 'ITC Avant Garde Gothic Bold', serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 25vw;
+
+}
+
+.content-text h4 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+    padding-left: 25vw;
+    line-height: 5vw;
+
+}
+
+/* 作品入口 */
+
+.kongjian {
+    background-color: transparent;
+
+    margin-left: 4vw;
+    margin-right: 4vw;
+    min-height: 66vh;
+    /*  */
+    margin-bottom: 10vw;
+    /*  */
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.content-text-kelong {
+
+    padding-left: vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 9vh;
+    margin-bottom: 10vh;
+    word-wrap: break-word;
+    text-align:left;
+    letter-spacing: 2px;
+    line-height: 115px;
+    opacity: 0;
+    
+}
+
+.content-text-kelong h1 {
+    font-size: 95px;
+    color:transparent;
+    font-family: 'ITC Avant Garde Gothic Bold', serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 25vw;
+    text-shadow: 3px 3px black;
+}
+
+.content-text-kelong h4 {
+    font-size: 25px;
+    color: transparent;
+    margin: 0;
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+    padding-left: 25vw;
+    text-shadow: 2px 2px black;
+}
+
+
+/* 克隆空间分割线 */
+
+.work-enter-container {
+    margin-left: 12vw;
+    margin-right: 12vw;
+    overflow: auto;
+}
+
+.work-enter-cards img {
+    width: 100%;
+}
+
+.work-enter-cards p {
+    margin: auto;
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.work-enter-cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 9vw;
+    grid-gap: 10vw;
+
+}
+
+
+
+@media(max-width:800px) {
+    .work-enter-cards {
+        display: block;
+    }
+}
+
+.project-photo-container {
+    border: 1vw solid white;
+    width: 40vw;
+    height: 30vw;
+    position: relative;
+}
+
+
+.text-inside {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+
+}
+
+.text-inside a {
+    font-family: 'ITC Avant Garde Gothic Bold', serif;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.project-photo-container img {
+    transition: 0.5s;
+}
+
+.project-photo-container:hover .text-inside a {
+    opacity: 1;
+}
+
+.project-photo-container:hover img {
+    opacity: 0;
+}
+
+.text-inside a:hover {
+    color: rgb(255, 123, 0);
+    border-bottom: 1px solid rgb(255, 123, 0);
+}
+
+
+
+
+
+
+/* 备份 */
+/* .work-enter-design {
+    margin-bottom: 12vw;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 4vw;
+    margin-left: 4vw;
+}
+
+.project-photo-container {
+    overflow: hidden;
+    width: 40vw;
+    height: 30vw;
+    margin-left: 8vw;
+    border: 1rem solid white;
+
+}
+
+.project-photo-container img {
+    height: 100%;
+    text-align: center;
+}
+
+.text-and-button {
+    max-width: 23vw;
+    padding-left: 10vw;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+}
+
+.text-and-button p {
+    margin: 0;
+} */
+
+
+
+/* .work-enter-photography {
+    margin-bottom: 9vw;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4vw;
+    margin-left: 4vw;
+
+}
+
+.photography-photo-container {
+    overflow: hidden;
+    width: 40vw;
+    height: 30vw;
+    margin-right: 8vw;
+    border: 2rem solid white;
+
+}
+
+.photography-photo-container img {
+    width: 100%;
+
+}
+
+.text-for-photo {
+    max-width: 23vw;
+    padding-left: 8vw;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+} */
+
+/* 备份 */
+
+
+/* blog updates */
+
+.blog {
+    margin-right: 12vw;
+    margin-left: 12vw;
+    font-family: 'ITC Avant Garde Gothic Bold', serif;
+    font-size: 100px;
+
+}
+
+.blog > div >p,a {
+    margin:0;
+}
+
+.title-container {
+    margin-bottom: 5vw;
+}
+
+.articles {
+    margin-bottom: 5vw;
+}
+
+.articles a {
+    color: black;
+    transition: 0.5s;
+    text-decoration: 3px solid underline;
+
+}
+
+.articles a:hover {
+    color: rgb(255, 123, 0);
+}
+
+/* contact me */
+
+.contact-container {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 16vw;
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 33vw;
+    background-color: black;
+
+}
+
+.contact-container a {
+    font-family: 'ITC Avant Garde Gothic Bold', serif;
+    font-size: 100px;
+    color: #bbd1d8;
+    text-decoration: none;
+    margin: auto;
+    border-bottom: 2px solid #bbd1d8;;
+    transition: 0.5s;
+}
+
+.contact-container a:hover {
+    color: rgb(255, 123, 0);
+    border-bottom: 2px solid rgb(255, 123, 0);;
+}
+
+.footer {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.content-wrapper > div {
+    margin:1vw;
+}
+.content-wrapper {
+    font-family: 'ITC Avant Garde Gothic Bold', serif;
+    font-size: 44.8px;
+    display: flex;
+}
+
+.footer-links {
+    border-bottom: 1px solid black;
+    transition: 0.5s;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.my-name p {
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.footer-links:hover a {
+    color: rgb(255, 123, 0);
+}
+
+.footer-links:hover {
+    border-bottom: 1px solid rgb(255, 123, 0);
+}
+
