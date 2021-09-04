@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Bk';
+    src: local('ITC Avant Garde Gothic Bk'), local('ITC-Avant-Garde-Gothic-Bk'),
+        url('ITCAvantGardeStd-Bk.woff2') format('woff2'),
+        url('ITCAvantGardeStd-Bk.woff') format('woff'),
+        url('ITCAvantGardeStd-Bk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic XLt';
+    src: local('ITC Avant Garde Gothic Light'), local('ITC-Avant-Garde-Gothic-Light'),
+        url('ITCAvantGardeStd-XLt.woff2') format('woff2'),
+        url('ITCAvantGardeStd-XLt.woff') format('woff'),
+        url('ITCAvantGardeStd-XLt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Md';
+    src: local('ITC Avant Garde Gothic Md'), local('ITC-Avant-Garde-Gothic-Md'),
+        url('ITCAvantGardeStd-Md.woff2') format('woff2'),
+        url('ITCAvantGardeStd-Md.woff') format('woff'),
+        url('ITCAvantGardeStd-Md.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Bold';
+    src: local('ITC Avant Garde Gothic Bold'), local('ITC-Avant-Garde-Gothic-Bold'),
+        url('ITCAvantGardeStd-Bold.woff2') format('woff2'),
+        url('ITCAvantGardeStd-Bold.woff') format('woff'),
+        url('ITCAvantGardeStd-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+body {
+    background-color: #bbd1d8;
+    margin: 0;
+}
+
+
+/* 导航页面格式 */
+
+.nav {
+    top: 0;
+    z-index: 999;
+    background-color: #bbd1d8;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    align-items: baseline;
+}
+
+
+.right-side {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-left: 1.5vw;
+    font-size: 20px;
+}
+
+.name {
+    font-size: 32px;
+    font-family: 'ITC Avant Garde Gothic Bold', serif;
+
+}
+
+.name a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.5s;
+}
+
+.name a span {
+    color: rgb(255, 123, 0);
+    transition: 0.5s;
+
+
+}
+
+.name a:hover {
+    color: rgb(255, 123, 0);
+}
+
+.name a:hover span {
+    color: black;
+}
+
+.nav-link-wrapper {
+    height: 28px;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+}
+
+.nav-link-wrapper-down {
+    height: 28px;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+    position: relative;
+
+}
+
+.nav-link-wrapper-down a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+}
+
+.nav-link-icons img {
+    height: 22px;
+    width: 100%;
+
+}
+
+.nav-link-icons-1 img {
+    height: 18px;
+    width: 100%;
+
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 2px solid rgb(255, 123, 0);
+}
+
+.nav-link-wrapper a:hover {
+    color: rgb(255, 123, 0);
+}
+
+.nav-link-wrapper-down:hover {
+    border-bottom: 2px solid rgb(255, 123, 0);
+}
+
+.nav-link-wrapper-down a:hover {
+    color: rgb(255, 123, 0);
+}
+
+.nav-link-wrapper-down:hover .dropdown-content {
+    display:block;
+    margin-top: 5px;
+
+}
+
+.active-nav-link {
+    border-bottom: 2px solid rgb(255, 123, 0);
+}
+
+.active-nav-link a {
+    color:  rgb(255, 123, 0) !important;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+
+}
+
+.blog-container {
+    margin-top: 4vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    overflow: auto;
+}
+
+.blog-enter-cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 9vw;
+
+}
+
+.photo {
+    border: 1rem solid white;
+    height: 33vw;
+    width: 33vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-w {
+    border: 1rem solid white;
+    height: 33vw;
+    width: 33vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
+    height: 100%;
+}
+
+.photo-w img {
+    width: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 15vw;
+}
+
+.text p {
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.text h1 {
+    font-family: 'ITC Avant Garde Gothic Bold', serif;
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+
+.read-more-link a {
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.read-more-link:hover a {
+    color: rgb(255, 123, 0);
+    border-bottom: 2px solid rgb(255, 123, 0);
+}
+
+.blog-enter-cards:nth-child(even) .photo{
+    order: 2;
+}
+
+
+
+/* footer */
+.footer {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.content-wrapper > div {
+    margin:1vw;
+}
+.content-wrapper {
+    font-family: 'ITC Avant Garde Gothic Bold', serif;
+    font-size: 44.8px;
+    display: flex;
+}
+
+.footer-links {
+    border-bottom: 1px solid black;
+    transition: 0.5s;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.my-name p {
+    font-family: 'ITC Avant Garde Gothic Md', serif;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.footer-links:hover a {
+    color: rgb(255, 123, 0);
+}
+
+.footer-links:hover {
+    border-bottom: 1px solid rgb(255, 123, 0);
+}
+
